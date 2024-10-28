@@ -9,7 +9,18 @@
 .btn-outline-secondary:hover {
   color: #fff;
 }
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@300&display=swap');
+*{
+  margin: 0;
 
+  padding: 0;
+  
+  box-sizing: border-box;
+  
+  font-family: 'Roboto', sans-serif;
+  
+  font-size: 18px;
+}
 .body {
   background-color: white;
   margin: 0;
@@ -18,10 +29,73 @@
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////*/
-     .text-padding{
-      padding:0.05px;
-     }
+
+.form-control, input, textarea {
+  height: 30px;
+  width:100%;
+  padding: -1;
+  pointer-events: auto;
+  position: relative;
+  z-index: 10; /* Keep form fields above other content */
+}
+/* Ensure the contact form container is above background and other elements */
+
+.text-container {
+    position: relative; /* Required for z-index to take effect */
+    max-width: 100%; 
+    overflow: hidden;
+    z-index: 10; /* Ensure text is above the decoration */
+    max-width: 100%; /* Prevents overflow */
+    padding: 0 15px; /* Adjust padding */
+    box-sizing: border-box;
+}
+#contactForm {
+  max-width: 100%; /* Prevent form elements from overflowing */
+  padding: 20px; /* Adjust padding inside the form */
+}
+     /* Ensure form fields (input and textarea) are on top if there's any overlapping issue */
+input, textarea {
+  width: 100%; /* Ensure input fields are full-width */
+  padding: 6px;
+  outline: none;
+  border: none;
+  margin: 6px 0px;
+  /* position: relative; */
+  z-index: 1; /* This ensures input fields are clickable if anything is layered on top */
+}
+
+/* Additional form styling, if needed */
+form {
+  margin-top: 20px; /* Optional margin for the form */
+  width: 500px;
+  padding: 6px;
+}
+
+.mb-3 input, .mb-3 textarea {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Border style for inputs and textarea */
+}
+
+
+
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Optional: Customize the button on hover */
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
      .container {
+      padding: 20px; /* Adjust based on your design */
             position: relative;
             width: 100%;
             height: 500px; /* Fixed height */
@@ -80,7 +154,7 @@
         justify-content: space-between;
         padding: 20px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
-        z-index: 1000;
+        z-index: 9999;
         transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
      }
 
@@ -136,6 +210,7 @@
   left: -200px;
   width: 500px;
   opacity: 0.7;
+  z-index: -1; /* Ensure it's behind other content */
 }
 
 .header .decoration-star-2 {
@@ -143,6 +218,7 @@
   right: -200px;
   width: 500px;
   opacity: 0.7;
+  z-index: -1; /* Ensure it's behind other content */
 }
 
 .navbar-sticky {
@@ -154,16 +230,19 @@
 .details .decoration-star {
   left: -200px;
   width: 500px;
+  z-index: -1; /* Ensure it's behind other content */
 }
 
 .details-2 .decoration-star {
   right: -200px;
   width: 500px;
+  z-index: -1; /* Ensure it's behind other content */
 }
 
 .contact .decoration-star {
   left: -300px;
   width: 600px;
+  z-index: -1; /* Ensure it's behind other content */
 }
 
 .to-top-btn {
@@ -209,13 +288,16 @@
   .header .decoration-star {
     left: -100px;
     width: 250px;
+    z-index: 0; /* Ensure it's behind other content */
   }
   .header .decoration-star-2 {
     right: -100px;
     width: 250px;
+    z-index: 0; /* Ensure it's behind other content */
   }
   .header .image-container {
     margin-top: 30px;
+    z-index: -1;
   }
   .services .col-md-4 {
     border-bottom: 1px #ccc solid;
@@ -226,5 +308,7 @@
   }
   .details-2 .decoration-star {
     top: 300px;
+    z-index: 0; /* Ensure it's behind other content */
   }
+  
 }

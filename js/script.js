@@ -58,6 +58,48 @@ function incrementStats() {
     updateCounter();
   });
 }
+//Send Mail Function created 
+
+function sendMail(){
+  var params= {
+
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      message: document.getElementById("message").value,
+
+
+  };
+
+  const serviceID = "service_o15abc2";
+  const templateID = "template_yywa99l";
+  emailjs
+      .send(serviceID, templateID, params)
+      .then(res => {
+          document.getElementById("name").value = "",
+          document.getElementById("email").value = "",
+          document.getElementById("phone").value = "",
+          document.getElementById("message").value = "",
+          console.log(res);
+          alert("Message send sucessfully!!!");
+      })
+  .catch((err) => console.log(err));
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  const submitButton = form.querySelector("button[type='submit']");
+  const requiredFields = form.querySelectorAll("input[required], textarea[required]");
+
+  function checkFieldsAndSubmit() {
+      const allFilled = Array.from(requiredFields).every(field => field.value.trim() !== "");
+      if (allFilled) {
+          submitButton.click();
+      }
+  }
+
+  requiredFields.forEach(field => field.addEventListener("input", checkFieldsAndSubmit));
+});
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', userScroll);
