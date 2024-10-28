@@ -63,7 +63,10 @@ input, textarea {
   /* position: relative; */
   z-index: 1; /* This ensures input fields are clickable if anything is layered on top */
 }
-
+/* text colour for contact form */
+.orange-text {
+  color: rgb(235, 105, 45);
+}
 /* Additional form styling, if needed */
 form {
   margin-top: 20px; /* Optional margin for the form */
@@ -81,8 +84,8 @@ form {
 
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #ff7b00;
+  border-color: #ff8800;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
@@ -93,15 +96,27 @@ form {
   background-color: #0056b3;
   border-color: #004085;
 }
+.nav-container {
+  padding-top: 5px; /* Adjust this value as needed */
+  padding-bottom: 5px; /* Adjust this value as needed */
+}
 
      .container {
-      padding: 20px; /* Adjust based on your design */
+            padding: 20px; /* Adjust based on your design */
             position: relative;
             width: 100%;
             height: 500px; /* Fixed height */
             overflow: hidden;
         }
 
+        .contact-container {
+          padding: 20px; /* Adjust based on your design */
+          position: relative;
+          width: 100%;
+          height: 500px; /* Fixed height */
+          overflow: hidden;
+          background-color: rgb(216, 232, 240);
+      }
       .background-video {
       
         position: sticky;
@@ -180,8 +195,8 @@ form {
       }
 
       .nav-content {
-          padding: 60px 20px; /* Ensure content is below navbar */
-          margin-top: 60px; /* Extra space to clear the fixed navbar */
+          padding: 30px 20px; /* Ensure content is below navbar */
+          /* margin-top: 30px; Extra space to clear the fixed navbar */
       }
       .nav-link {
         text-transform: uppercase;

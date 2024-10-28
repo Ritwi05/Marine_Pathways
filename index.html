@@ -36,9 +36,9 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-      <div class="container">
+      <div class="nav-container">
         <a class="navbar-brand" href="#">
-          <img src="images/logo2.png" alt="" width="100" />
+          <img src="images/logo2.png" alt="Logo" width="100" />
         </a>
         <button
           class="navbar-toggler"
@@ -57,28 +57,25 @@
               <a class="nav-link" aria-current="page" style="color: rgb(235, 105, 45);" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#who-we-are">Who we are </a>
+              <a class="nav-link" href="#who-we-are">Who We Are</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sale-and-purchase-of-ships">Sale and purchase of ships</a>
+              <a class="nav-link" href="#sale-and-purchase-of-ships">Sale and Purchase of Ships</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Careers">Careers</a>
+              <a class="nav-link" href="#careers">Careers</a>
             </li>
             <li class="nav-item">
-              <a
-                class="btn btn-outline-secondary px-4 mx-4"
-                href="#contact"
-                ><b>Enquiry</b></a
-              >
+              <a class="btn btn-outline-secondary px-4 mx-4" href="#contact"><b>Enquiry</b></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
 
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
     <!--<div class="background-video-container">-->
@@ -633,45 +630,61 @@
      <!-- Contact from navbar button -->
     <section id="contact" class="contact my-6 position-relative">
          
-      <div class="container position-relative z-1">
+      <div class="contact-container position-relative z-1">
         <div class="row">
           <div class="col-lg-6 d-none d-md-block">
             
             <div class="image-container">
-              <img src="images/contact.png" alt="" class="img-fluid" />
+              <h3 class="orange-text">ContacT Us</h3>
+              <div class="con-addr-left">
+                <div class="con-addr-sec">
+                <h4 class="orange-text">INDIA - HEAD OFFICE</h4>
+                <span class="con-addr">Office no 605, A Wing, Samarth Aishwarya, Adarsh Nagar Lokhandwala Complex, Andheri West 400053.</span>
+                <span class="con-mail">info@willmar.in</span>
+                <span class="con-contact">+912235739556</span>
+                </div>
+                <div class="con-addr-sec">
+                <h4 class="orange-text">TURKEY - OTHER BRANCH</h4>
+                <span class="con-addr">Dogu Mahallesi, Yuksel Sokak No 39, D:1, Pendik / Istanbil.</span>
+                <span class="con-mail">turkey@willmar.in</span>
+                <span class="con-contact"></span>
+                </div>
+                <div class="con-addr-sec">
+                <h4 class="orange-text">GERMANY - OTHER BRANCH</h4>
+                <span class="con-addr">10589 Berlin, Osnabrücker Str. 30, Germany.</span>
+                <span class="con-mail">germany@willmar.in</span>
+                <span class="con-contact"></span>
+                </div>
+                </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <h5 style="margin: 0; padding: 0; line-height: -1;">Contact Us For Enquiry</h5>
+           
             <div class="text-container">
               <form id="contactForm">
                 <div class="mb-3">
-                  Name
                   <input type="text" 
                   class = "form-control" 
                   id = "name" 
-                  placeholder="Enter Name" 
+                  placeholder="Full name:" 
                   required>
                 </div>
                 <div class="mb-3">
-                  Email
+                  <input type="mobile-no" 
+                  class = "form-control" 
+                  id = "mobile-no" 
+                  placeholder="Mobile no:" 
+                  required>
+                </div>
+                <div class="mb-3">
                   <input type="email" 
                   class = "form-control" 
                   id = "email" 
-                  placeholder="Enter Email" 
+                  placeholder="Email Address:" 
                   required>
                 </div>
                 <div class="mb-3">
-                  Phone
-                  <input type="phone" 
-                  class = "form-control" 
-                  id = "phone" 
-                  placeholder="Enter Number" 
-                  required>
-                </div>
-                <div class="mb-3">
-                  Message
-                  <textarea  id="message" rows = "3" class = "form-control" placeholder="Message"></textarea>
+                  <textarea  id="message" rows = "3" class = "form-control" placeholder="Write your message here.."></textarea>
                 </div>
                 <div class="d-grid gap-2"> 
                   <button class = "btn btn-primary" onclick = "sendMail()">Submit</button> 
