@@ -12,14 +12,6 @@ function userScroll() {
     }
   });
 }
-// window.addEventListener("scroll", function() {
-//     var navbar = document.querySelector(".navbar");
-//     if (window.scrollY > 0) {
-//         navbar.classList.add("blurred");
-//     } else {
-//         navbar.classList.remove("blurred");
-//     }
-// });
 window.addEventListener("scroll", function() {
   var navbar = document.querySelector(".navbar");
   var scrollTop = window.scrollY;
@@ -86,20 +78,6 @@ function sendMail(){
   .catch((err) => console.log(err));
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contactForm");
-  const submitButton = form.querySelector("button[type='submit']");
-  const requiredFields = form.querySelectorAll("input[required], textarea[required]");
-
-  function checkFieldsAndSubmit() {
-      const allFilled = Array.from(requiredFields).every(field => field.value.trim() !== "");
-      if (allFilled) {
-          submitButton.click();
-      }
-  }
-
-  requiredFields.forEach(field => field.addEventListener("input", checkFieldsAndSubmit));
-});
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', userScroll);

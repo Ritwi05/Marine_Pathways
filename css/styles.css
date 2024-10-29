@@ -24,7 +24,10 @@
 .body {
   background-color: white;
   margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  
   
 }
 
@@ -97,9 +100,14 @@ form {
   border-color: #004085;
 }
 .nav-container {
-  padding-top: 5px; /* Adjust this value as needed */
-  padding-bottom: 5px; /* Adjust this value as needed */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
 
      .container {
             padding: 20px; /* Adjust based on your design */
@@ -162,7 +170,7 @@ form {
         left: 0;
         width: 100%;
         height: 100px; /* Adjust height as needed */
-        background-color: rgba(255, 255, 255, 0.1); /* White background */
+        background-color: rgba(249, 249, 253, 0.521); /* White background */
         transition: background-color 0.3s ease;
         display: flex;
         align-items: center;
@@ -175,9 +183,16 @@ form {
 
 /* Navbar when scrolled (blurred) */
       .navbar.blurred {
-          background-color: rgba(255, 255, 255, 0.10); /* Slightly transparent white */
+          background-color: rgba(247, 244, 244, 0.1); /* Slightly transparent white */
           backdrop-filter: blur(10px); /* Apply blur effect */
       }
+      #navbarNavDropdown {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    
 /*logo style.css*/
       .logo img {
           height: 60px; /* Adjust logo size */
@@ -200,8 +215,18 @@ form {
       }
       .nav-link {
         text-transform: uppercase;
-        color: rgb(5, 5, 5);
+        color: rgb(12, 12, 12);
+        text-shadow: none;
       }
+      .navbar-brand {
+        margin-right: 150px; /* Pushes logo to the far left */
+        margin-left: 50px;
+        
+    }
+    
+    .navbar-nav {
+        margin-left: auto; /* Pushes menu items to the far right */
+    }
 .h2{
   color: #fff;
 }
@@ -217,7 +242,52 @@ form {
   border-color: rgb(240, 239, 237);
   color: rgb(5, 5, 5);              /* Change text color on hover */
 }
-  
+  /* Vision class */
+  .vision-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); box-shadow: 0px 3px 20px #0000001A; background-color: #fff;
+    margin: 70px auto;
+    }
+    .vision-block:nth-child(odd) {
+    background-color: #967d6f;
+    }
+    .vision-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    }
+    .vision-block span {
+    font-family: 'Inter-SemiBold';
+    margin: 10px auto;
+    font-size: 20px; color: white;
+    }
+    .vision-block:first-child p {
+    margin-bottom: 33px;
+    }
+    .vision-block p { color: white;
+    font-size: 16px;
+    }
+    .vision-block:nth-child(even) {
+    background-color: #688c8d;
+    }
+    .vision-sec {
+    position: relative; }
+    .vision-sec:before {
+    content: '';
+    background-image: url(http://www.willmar.in/wp-content/uploads/2023/03/bg-blur-img-1.jpg);
+    background-position: bottom;
+    position: absolute;
+    top: 110px;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     
 .header .decoration-star {
