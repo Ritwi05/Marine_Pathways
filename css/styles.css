@@ -166,7 +166,7 @@ form {
   /*navbar style.css*/
       .navbar {
         position: fixed;
-        top: 0;
+        top: 40px; /* Adjust this value based on the height of your marquee */
         left: 0;
         width: 100%;
         height: 100px; /* Adjust height as needed */
@@ -191,7 +191,30 @@ form {
         justify-content: space-between;
         width: 100%;
     }
-    
+  /*Marquee tag */
+  .custom-marquee {
+    background-color: #05374e;
+    padding: 5px;
+    height: 40px;
+    color: #fafcf9;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.custom-marquee p {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
     
 /*logo style.css*/
       .logo img {
@@ -227,15 +250,30 @@ form {
     .navbar-nav {
         margin-left: auto; /* Pushes menu items to the far right */
     }
-.h2{
-  color: #fff;
-}
-/*nav button*/
-.btn-outline-secondary {
-  border-color: rgb(241, 236, 229);  /* Change border color */
-  color: rgb(5, 5, 5);         /* Change text color */
-  text-transform: uppercase;
-}
+    /* Hidden Marquee */
+    .marquee-hidden {
+      opacity: 0;
+      height: 0;
+      visibility: hidden;
+    }
+    .responsive-img {
+      width: 100%; /* Fit the width of the screen */
+      height: 15%; /* Fixed height */
+      object-fit: cover; /* Ensures the image scales properly */
+  }
+    /* Navbar Moves to Marquee Position */
+    .navbar-scrolled {
+      top: 0;
+    }
+    .h2{
+      color: #fff;
+    }
+    /*nav button*/
+    .btn-outline-secondary {
+      border-color: rgb(241, 236, 229);  /* Change border color */
+      color: rgb(5, 5, 5);         /* Change text color */
+      text-transform: uppercase;
+    }
 
 .btn-outline-secondary:hover {
   background-color: rgb(252, 252, 252);  /* Change background color on hover */
@@ -290,110 +328,3 @@ form {
     }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     
-.header .decoration-star {
-  top: 80px;
-  left: -200px;
-  width: 500px;
-  opacity: 0.7;
-  z-index: -1; /* Ensure it's behind other content */
-}
-
-.header .decoration-star-2 {
-  top: 80px;
-  right: -200px;
-  width: 500px;
-  opacity: 0.7;
-  z-index: -1; /* Ensure it's behind other content */
-}
-
-.navbar-sticky {
-  background: #fff;
-  
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.details .decoration-star {
-  left: -200px;
-  width: 500px;
-  z-index: -1; /* Ensure it's behind other content */
-}
-
-.details-2 .decoration-star {
-  right: -200px;
-  width: 500px;
-  z-index: -1; /* Ensure it's behind other content */
-}
-
-.contact .decoration-star {
-  left: -300px;
-  width: 600px;
-  z-index: -1; /* Ensure it's behind other content */
-}
-
-.to-top-btn {
-  position: fixed;
-  z-index: 20;
-  bottom: 20px;
-  right: 20px;
-  opacity: 0;
-  width: 52px;
-  height: 52px;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  background-color: #44434a;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-
-.to-top-btn:hover {
-  background-color: #1d1d21;
-}
-
-.to-top-btn img {
-  margin-bottom: 0.25rem;
-  width: 18px;
-}
-
-.show {
-  opacity: 1;
-}
-
-@media (max-width: 992px) {
-  .xl-text {
-    font-size: 50px;
-  }
-  .navbar .btn-outline-secondary {
-    margin-top: 20px;
-  }
-  .header {
-    margin-top: 0px !important;
-    text-align: center;
-  }
-  .header .decoration-star {
-    left: -100px;
-    width: 250px;
-    z-index: 0; /* Ensure it's behind other content */
-  }
-  .header .decoration-star-2 {
-    right: -100px;
-    width: 250px;
-    z-index: 0; /* Ensure it's behind other content */
-  }
-  .header .image-container {
-    margin-top: 30px;
-    z-index: -1;
-  }
-  .services .col-md-4 {
-    border-bottom: 1px #ccc solid;
-    margin: 10px 0;
-  }
-  .details-2 {
-    margin-top: 20px !important;
-  }
-  .details-2 .decoration-star {
-    top: 300px;
-    z-index: 0; /* Ensure it's behind other content */
-  }
-  
-}
