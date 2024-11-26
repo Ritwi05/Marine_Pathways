@@ -62,7 +62,7 @@ input, textarea {
 }
 
 .orange-text {
-  color: rgb(235, 105, 45);
+  color: rgb(48, 134, 168);
 }
 
 form {
@@ -78,8 +78,8 @@ form {
 }
 
 .btn-primary {
-  background-color: #ff7b00;
-  border-color: #ff8800;
+  background-color: #085f99;
+  border-color: #065372;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
@@ -115,7 +115,52 @@ form {
   overflow: hidden;
   background-color: rgb(216, 232, 240);
 }
+.cont-banner .bannerall__left {
+  width: 615px;
+}
 
+.bannerall {
+  position: relative;
+  }
+  .bannerall::after {
+  content: "";
+  position: absolute;
+  background-image: url(https://celebratedeals.in/clients/willmar/wp-content/uploads/2023/04/banner-overlay.png);
+  width: 50%;
+  height: 200px;
+  right: 0;
+  top: 0px;
+  background-position: top;
+  background-size: cover;
+  }
+  .bannerall__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-end;
+  grid-gap: 30px;
+  }
+  .bannerall__left {
+  width: 620px;
+  margin-left: auto;
+  margin-bottom: 70px;
+  }
+  .bannerall__left h1{
+  font-family: "Lemonmilk-Regular";
+  color: #BD1E2D; font-size: 78px;
+  line-height: 82px;
+  }
+  .bannerall__left p {
+  font-family: 'Inter-Semibold';
+  color: #171717;
+  }
+  .bannerall__right img {
+  max-width: 100%;
+  }  
+   /* .established {
+  background-color: #F8F8F8;
+  padding-top: 90px;
+  } */
+   
 .background-video {
   position: sticky;
   top: 0;
@@ -281,7 +326,7 @@ form {
 }
 
 .vision-block:nth-child(odd) {
-  background-color: #967d6f;
+  background-color: #62a5b1;
 }
 
 .vision-block {
@@ -310,7 +355,7 @@ form {
 }
 
 .vision-block:nth-child(even) {
-  background-color: #688c8d;
+  background-color: #2c7375;
 }
 
 .vision-sec {
@@ -418,6 +463,17 @@ form {
   right: 0;
   background-color: #fa07078a; 
   opacity: 0.4; 
+}
+.tel-sec a , .mail-sec a{
+  font-family: Inter-Regular;
+  font-size: 14px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.tel-sec img,.mail-sec img {
+    width: 20px; 
+    height: auto; 
 }
 
 

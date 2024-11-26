@@ -61,7 +61,7 @@
           
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html" aria-current="page" style="color: rgb(235, 105, 45);" href="#">Home</a>
+              <a class="nav-link" aria-current="page" style="color: rgb(235, 105, 45);" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="who-we-are.html">Who We Are</a>
@@ -82,59 +82,80 @@
         </div>
       </div>
     </nav>
-    
-
-      <div >
-        <img src="images/slide1.jpg" alt="Description of the image" width = "100%" height="20%">
-    </div>
-      
- <div class="scroll-down">
-  <div class = "cont">
-  
-      <h2 class= "color_11 wixui-rich-text__text" style="color:rgb(6, 3, 32) ; font-size: 50px;  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">Welcome to Marine Pathways</h2>
-      <h2 style="color:rgba(255, 255, 255, 0.76);">Your One-Stop Shop for All Your Shipping Needs</h2>
-      <p><h2 style="color:rgba(255, 255, 255, 0.76);">Trust us to provide efficient and reliable shipping solutions.</h2 ></p>
-  </div>
-  </div>
-
-    <!-- Header -->
-    <div class="body">
-      <div class="vision-inner desktop-vision">
-        <div class="vision-block">
-          <span>Vision</span>
-          <p>Our vision at Marine is to become a global leader in providing innovative and sustainable shipping solutions that exceed our client's expectations.</p>
+    <section id="contact" class="contact my-6 position-relative">
+      <div class="bannerall banner__whoweare">
+        <div class="bannerall__content">
+        <div class="bannerall__left">
+        <h1>Contact Us</h1>
+        <p>Maintenance and repair, Inspection, testing, Calibration, and consulting services are all part of our technical offerings.</p>
         </div>
-        <div class="vision-block">
-          <span>Mission</span>
-          <p>Our mission at Marine is to deliver world-class shipping solutions through our experienced team, cutting-edge technology, and commitment to quality and safety.</p>
+        <div class="bannerall__right">
+        <img src="https://www.willmar.in/wp-content/uploads/2023/04/contact-banner.jpg">
         </div>
-        <div class="vision-block">
-          <span>Our Values</span>
-          <p>At Marine, we value integrity, accountability, teamwork, innovation, and sustainability, which are the cornerstones of our business and the key to our success.</p>
         </div>
-        <div class="vision-block">
-          <span>Our Streangth</span>
-          <p>At Marine, our strength lies in our ability to provide comprehensive shipping solutions that are tailored to meet our client's specific needs and exceed their expectations.</p>
         </div>
-        <div class="clear">
-        </div>
-      </div>
-    </div>  
-
-
-
-    <div class="ab-con-rgt">
-      <span class="sm-title">Marine Shipping Solutions</span>
-      <h3 class="ab-title">About Marine Shipping</h3>
-      <div class="ab-con">
-      <p>Marine Shipping Solutions is an Indian company established in 2010. We’re an Independent company that offers a range of Shipping products and Services. Our expertise in Ship management has grown over the years.</p>
-      <p>Since developing trust is a key component of what we do, We do not skimp on Quality. High Caliber and skilled seafarers are readily available at our company. We communicate with our clients in an open and honest manner. In terms of Marine and Offshore services, Our business is at the forefront of the sector.</p>
-      </div>
-      <a href="https://www.Marine.in//who-we-are/">READ MORE</a>
-      </div>
-
-     <!-- Contact from navbar button -->
-    
+        <div class="contact-container position-relative z-1">
+          <div class="row">
+            <div class="col-lg-6 d-none d-md-block">
+              <div class="image-container">
+                <h3 class="orange-text">ContacT Us</h3>
+                <div class="con-addr-left">
+                  <div class="con-addr-sec">
+                  <h4 class="orange-text">INDIA - HEAD OFFICE</h4>
+                  <span class="con-addr">Office no 605, A Wing, Samarth Aishwarya, Adarsh Nagar Lokhandwala Complex, Andheri West 400053.</span>
+                  <span class="con-mail">info@Marine.in</span>
+                  <span class="con-contact">+912235739556</span>
+                  </div>
+                  <div class="con-addr-sec">
+                  <h4 class="orange-text">TURKEY - OTHER BRANCH</h4>
+                  <span class="con-addr">Dogu Mahallesi, Yuksel Sokak No 39, D:1, Pendik / Istanbil.</span>
+                  <span class="con-mail">turkey@Marine.in</span>
+                  <span class="con-contact"></span>
+                  </div>
+                  <div class="con-addr-sec">
+                  <h4 class="orange-text">GERMANY - OTHER BRANCH</h4>
+                  <span class="con-addr">10589 Berlin, Osnabrücker Str. 30, Germany.</span>
+                  <span class="con-mail">germany@Marine.in</span>
+                  <span class="con-contact"></span>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+             
+              <div class="text-container">
+                <form id="contactForm">
+                  <div class="mb-3">
+                    <input type="text" 
+                    class = "form-control" 
+                    id = "name" 
+                    placeholder="Full name:" 
+                    required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="mobile-no" 
+                    class = "form-control" 
+                    id = "mobile-no" 
+                    placeholder="Mobile no:" 
+                    required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" 
+                    class = "form-control" 
+                    id = "email" 
+                    placeholder="Email Address:" 
+                    required>
+                  </div>
+                  <div class="mb-3">
+                    <textarea  id="message" rows = "3" class = "form-control" placeholder="Write your message here.."></textarea>
+                  </div>
+                  <div class="d-grid gap-2"> 
+                    <button class = "btn btn-primary" onclick = "sendMail()">Submit</button> 
+                  </div>
+                </form>
+              </div>
+            </div> 
+      </section>
     <section>
       <div class="footer-solution">
           <div class="container-x">
@@ -250,6 +271,7 @@
           </footer>
   </section>
     
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
